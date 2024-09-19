@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last quarter food menu</title>
+    <style>
+        table{
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table tr{
+            border: 20px solid blue;    
+        }
+        table th, table td{
+            text-align: center;
+            border-inline: 10px solid red;
+            padding-block: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>last quarter food menu</caption>
+        <thead>
+            <tr>
+                <th scope="col">days</th>
+                <th scope="col">breakfast</th>
+                <th scope="col">lunch</th>
+                <th scope="col">dinner</th>
+            </tr>
+        </thead>
+        <!-- tbody>(tr>th+td*3)*5 -->
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td rowspan="2">rice</td>
+                <td>beans</td>
+                <td>yam</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <!--<td>fish</td>-->
+                <td>egg</td>
+                <td>mik</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td rowspan="2">potatoes</td>
+                <td>cocoyam</td>
+                <td>beef</td>
+            </tr>
+            <tr>
+                <th scope="row">Thursday</th>
+                <!--<td>vegetables</td>-->
+                <td>carrot</td>
+                <td>bread</td>
+            </tr>
+            <tr>
+                <th scope="row">Friday</th>
+                <td colspan="3">chicken</td>
+                <!--<td>pizza</td>
+                <td>chocolate</td>-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">eat responsibly, food is important to health</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th scope="col">days</th>
+                <th scope="col">breakfast</th>
+                <th scope="col">lunch</th>
+                <th scope="col">dinner</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
